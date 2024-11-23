@@ -36,3 +36,6 @@ def get_jobs():
         return jsonify(jobs_data)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+@app.route('/')
+def index():
+    return "App is running ."
